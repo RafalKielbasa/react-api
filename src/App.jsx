@@ -1,5 +1,11 @@
+import UserGrid from "./components/UserGrid";
+
 function App() {
-  return <div></div>
+  return (
+    <div>
+      <UserGrid />
+    </div>
+  );
 }
 
-export default App
+export default App;
