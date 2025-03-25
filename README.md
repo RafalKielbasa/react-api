@@ -14,37 +14,17 @@ Stworzenie aplikacji webowej wykorzystującej API [JSONPlaceholder](https://json
 
 1. **Pobieranie danych:**
 
-   - Wykorzystaj axios do pobrania listy użytkowników z endpointu:
-     `https://jsonplaceholder.typicode.com/users`
    - Po kliknięciu kafelka, pobierz pojedynczy post korzystając z endpointu:
-     `https://jsonplaceholder.typicode.com/posts/<id>`
+     `https://jsonplaceholder.typicode.com/user/<id>`
      - **Uwaga:** `<id>` to identyfikator użytkownika klikniętego kafelka.
+   - Akcja ta powinna zostać wykonana na zdarzeniu onClick
 
 2. **Interfejs użytkownika:**
-
-   - **Widok główny:**
-     Wyświetl dane użytkowników w formie kafelków (grid layout). Każdy kafelek powinien zawierać:
-   - wszytskie informacje dostępne w API
    - **Panel boczny (Sidebar):**
      Po kliknięciu kafelka, otwórz panel boczny:
-     - Panel powinien dynamicznie pobrać i wyświetlić dane z endpointu `/posts` o `id` odpowiadającym `id` użytkownika.
+     - Panel powinien dynamicznie pobrać i wyświetlić dane z endpointu `/user/<id>` o `id` odpowiadającym `id` użytkownika.
      - Zadbaj o możliwość zamknięcia panelu.
-
-3. **Design i responsywność:**
-
-   - Upewnij się, że widok kafelków jest responsywny (np. używając CSS Grid lub Flexbox).
-   - Panel boczny powinien płynnie się otwierać/zamykać i nie zakłócać widoku głównego.
-
-4. **Obsługa błędów:**
-
-   - Zaimplementuj komunikaty o błędach w przypadku nieudanego pobrania danych (np. wyświetl komunikat "Błąd ładowania danych" w panelu bocznym lub nad kafelkami).
-
-5. **Wskazówki techniczne:**
-   - Podziel kod na komponenty (np. `UserTile`, `Sidebar`, `UserGrid`).
-   - Komponenty umieszczamy w folderze components
-   - Zarządzaj stanem aplikacji.
-   - Zadbaj o czytelność i modularność kodu – pisz komentarze tam, gdzie to konieczne.
-
+     - Wyświetlamy wszystkie informacje dostępne w obiekcie. 
 ---
 
 ## Zadania Dodatkowe (opcjonalnie)
@@ -53,8 +33,7 @@ Stworzenie aplikacji webowej wykorzystującej API [JSONPlaceholder](https://json
   Dodaj lekkie animacje przy otwieraniu i zamykaniu panelu bocznego.
 - **Filtrowanie/Szukajka:**
   Umożliw wyszukiwanie użytkowników wg nazwy lub miasta.
-- **Testy jednostkowe:**
-  Dodaj proste testy (np. z użyciem Jest) dla głównych komponentów.
+
 
 ---
 
